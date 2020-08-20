@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Lint HTML') {
       steps {
-        sh 'echo "Uploading content with AWS creds"'
+        sh 'echo "Linting"'
         sh 'tidy -q -e *.html'
       }
     }
